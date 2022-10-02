@@ -3,6 +3,8 @@
 :root {
   --header-bg-color: #111111;
   --text-color: #fff;
+  --name-text-color: #ff3343;
+  --btn-color: #c91b28;
 }
 
 /* Reset */
@@ -18,12 +20,13 @@ body {
 
 header {
   background-color: var(--header-bg-color);
-  height: 60vh;
+  height: 100vh;
 }
 
 /* Navbar */
 nav,
-.lists {
+.lists,
+main {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,5 +44,34 @@ nav,
   list-style-type: none;
   margin-left: 40px;
   cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Hero Section */
+main {
+  color: var(--text-color);
+  justify-content: center;
+}
+
+.hero-image {
+  width: 665px;
+}
+
+.intro h2 {
+  color: var(--name-text-color);
+}
+
+.intro h1 {
+  font-size: 65px;
+}
+
+.intro p {
+  margin: 10px 0;
+}
+
+.intro .btn {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  padding: 15px 30px;
   text-transform: uppercase;
 }
