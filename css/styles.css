@@ -218,3 +218,44 @@ section {
   justify-content: center;
   gap: 5px;
 }
+
+/* Projects Section */
+.featured-projects {
+  color: #fff;
+  margin: 90px 350px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project h3 {
+  margin: 15px 0;
+  font-weight: 900;
+}
+
+.project h5 {
+  color: var(--btn-color);
+  text-transform: uppercase;
+}
+
+.image {
+  background-color: var(--card-bg-color);
+}
+
+.work-image {
+  width: 390px;
+  height: 350px;
+  padding: 60px 20px;
+}
