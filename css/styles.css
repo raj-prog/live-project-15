@@ -82,10 +82,6 @@ main {
 }
 
 /* Card Section */
-section {
-  height: 100vh;
-}
-
 #background {
   background-color: var(--left-section-color);
   position: absolute;
@@ -170,28 +166,28 @@ section {
 .box-2 {
   grid-area: two;
   background-color: var(--card-bg-color);
-  padding: 28px 35px;
+  padding: 20px 35px;
   width: 100%;
 }
 
 .box-3 {
   grid-area: three;
   background-color: var(--card-bg-color);
-  padding: 28px 35px;
+  padding: 20px 35px;
   width: 100%;
 }
 
 .box-4 {
   grid-area: four;
   background-color: var(--card-bg-color);
-  padding: 28px 35px;
+  padding: 20px 35px;
   width: 100%;
 }
 
 .box-5 {
   grid-area: five;
   background-color: var(--card-bg-color);
-  padding: 28px 35px;
+  padding: 20px 35px;
   width: 100%;
 }
 
@@ -221,19 +217,19 @@ section {
 
 /* Projects Section */
 .project-work {
-  margin: 100px 0;
+  margin-top: 100px;
 }
 
 .featured-projects {
   color: var(--text-color);
-  margin: 30px 350px;
+  margin: 30px 250px;
 }
 
 .heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 25px 0;
+  margin: 25px 95px;
 }
 
 .projects {
@@ -264,8 +260,9 @@ section {
   padding: 60px 20px;
 }
 
+/* Contact Section */
 .contact-us {
-  margin: 300px 300px;
+  margin: 60px 300px;
   color: var(--text-color);
 }
 
@@ -283,4 +280,45 @@ section {
 
 .contact p {
   margin: 25px 0;
+}
+
+.nav {
+  color: var(--text-color);
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+/* Footer */
+footer {
+  height: 15vh;
+  background-color: var(--card-bg-color);
+}
+
+.footer-container {
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socials > img {
+  margin-right: 25px;
+}
+
+.footer-logo {
+  width: 100px;
+  display: inline-block;
 }
