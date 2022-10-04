@@ -78,6 +78,7 @@ main {
   padding: 15px 30px;
   text-transform: uppercase;
   cursor: pointer;
+  border: 0;
 }
 
 /* Card Section */
@@ -95,6 +96,10 @@ section {
 
 .wrapper {
   padding: 60px 0;
+}
+
+.card-2 .card-logo {
+  width: 50px;
 }
 
 .card-logo {
@@ -128,19 +133,14 @@ section {
   color: var(--text-color);
 }
 
-.card h5 {
+.wrapper .cards .card h5 {
   color: var(--btn-color);
   margin-top: 15px;
   text-transform: uppercase;
-  color: var(--text-color);
 }
 
-.card-2 h5 {
+.wrapper .cards .card-2 h5 {
   color: var(--text-color);
-}
-
-.card-2 .card-logo {
-  width: 50px;
 }
 
 .card p {
@@ -220,9 +220,13 @@ section {
 }
 
 /* Projects Section */
+.project-work {
+  margin: 100px 0;
+}
+
 .featured-projects {
-  color: #fff;
-  margin: 90px 350px;
+  color: var(--text-color);
+  margin: 30px 350px;
 }
 
 .heading {
@@ -250,7 +254,7 @@ section {
   text-transform: uppercase;
 }
 
-.image {
+.images {
   background-color: var(--card-bg-color);
 }
 
@@ -258,4 +262,25 @@ section {
   width: 390px;
   height: 350px;
   padding: 60px 20px;
+}
+
+.contact-us {
+  margin: 300px 300px;
+  color: var(--text-color);
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 40px;
+  background-color: var(--card-bg-color);
+}
+
+.contact h1 {
+  font-size: 40px;
+}
+
+.contact p {
+  margin: 25px 0;
 }
