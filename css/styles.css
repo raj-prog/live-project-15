@@ -232,6 +232,14 @@ main {
   margin: 25px 95px;
 }
 
+.heading h1 {
+  font-size: 30px;
+}
+
+.heading p {
+  margin: 8px 0;
+}
+
 .projects {
   display: flex;
   align-items: center;
