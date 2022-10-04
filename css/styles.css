@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-  --header-bg-color: #111111;
+  --bg-color: #111111;
   --text-color: #fff;
   --name-text-color: #ff3343;
   --btn-color: #c91b28;
+  --left-section-color: #181818;
+  --card-bg-color: #1e1e1e;
+  --work-header-color: #ef4040;
 }
 
 /* Reset */
@@ -16,10 +19,10 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
 }
 
 header {
-  background-color: var(--header-bg-color);
   height: 100vh;
 }
 
@@ -54,7 +57,7 @@ main {
 }
 
 .hero-image {
-  width: 665px;
+  width: 660px;
 }
 
 .intro h2 {
@@ -69,9 +72,149 @@ main {
   margin: 10px 0;
 }
 
-.intro .btn {
+.btn {
   background-color: var(--btn-color);
   color: var(--text-color);
   padding: 15px 30px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Card Section */
+section {
+  height: 100vh;
+}
+
+#background {
+  background-color: var(--left-section-color);
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.wrapper {
+  padding: 60px 0;
+}
+
+.card-logo {
+  width: 60px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  width: 260px;
+  height: 270px;
+  padding: 35px 20px;
+  padding-left: 40px;
+}
+
+.card-2 {
+  background-color: var(--btn-color);
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: var(--text-color);
+}
+
+.card h5 {
+  color: var(--btn-color);
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.card-2 h5 {
+  color: var(--text-color);
+}
+
+.card-2 .card-logo {
+  width: 50px;
+}
+
+.card p {
+  margin: 18px 0;
+  color: var(--text-color);
+}
+
+.box p,
+.box-1 h2 {
+  color: var(--text-color);
+}
+
+.box-1 {
+  grid-area: one;
+  width: 100%;
+}
+
+.box h1 {
+  color: var(--work-header-color);
+  font-size: 40px;
+}
+
+.flex-1 h1 {
+  font-size: 90px;
+}
+
+.box-2 {
+  grid-area: two;
+  background-color: var(--card-bg-color);
+  padding: 28px 35px;
+  width: 100%;
+}
+
+.box-3 {
+  grid-area: three;
+  background-color: var(--card-bg-color);
+  padding: 28px 35px;
+  width: 100%;
+}
+
+.box-4 {
+  grid-area: four;
+  background-color: var(--card-bg-color);
+  padding: 28px 35px;
+  width: 100%;
+}
+
+.box-5 {
+  grid-area: five;
+  background-color: var(--card-bg-color);
+  padding: 28px 35px;
+  width: 100%;
+}
+
+.boxes {
+  position: relative;
+  z-index: 3;
+  margin: 100px 350px;
+  display: grid;
+  gap: 15px;
+  place-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas:
+    'one two three'
+    'one four five';
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
