@@ -1,0 +1,41 @@
+/* Laptop */
+@media screen and (max-width: 64rem) {
+  .lists {
+    display: none;
+  }
+
+  .bars {
+    display: block;
+    color: #fff;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 48rem) {
+  main {
+    flex-direction: column;
+  }
+
+  .intro {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'one one'
+      'two three'
+      'four five';
+  }
+
+  .heading {
+    margin: 0;
+    gap: 3rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 6rem 15rem;
+  }
+}

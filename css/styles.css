@@ -42,7 +42,7 @@ main {
 }
 
 .logo {
-  width: 50%;
+  width: 125px;
 }
 
 .list-item {
@@ -52,6 +52,10 @@ main {
   cursor: pointer;
   text-transform: uppercase;
   font-size: 1.6rem;
+}
+
+.bars {
+  display: none;
 }
 
 /* Hero Section */
